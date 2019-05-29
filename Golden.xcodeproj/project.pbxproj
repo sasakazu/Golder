@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		67A557B59AF55418BD60AE2D /* Pods_GoldenTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3AF18156A8BB6145BB8C6F /* Pods_GoldenTests.framework */; };
+		73AFCA2B229E38D500F1BE73 /* object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AFCA2A229E38D500F1BE73 /* object.swift */; };
+		73AFCA30229E3A8100F1BE73 /* collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AFCA2F229E3A8100F1BE73 /* collection.swift */; };
+		73AFCA32229E3ABF00F1BE73 /* collectionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AFCA31229E3ABE00F1BE73 /* collectionDetail.swift */; };
+		73AFCA36229E3AF800F1BE73 /* addCollecton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AFCA35229E3AF800F1BE73 /* addCollecton.swift */; };
+		73AFCA38229E3C5E00F1BE73 /* myGolden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AFCA37229E3C5E00F1BE73 /* myGolden.swift */; };
 		73C59ED6229D54C3004BDFBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C59ED5229D54C3004BDFBB /* AppDelegate.swift */; };
 		73C59ED8229D54C3004BDFBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C59ED7229D54C3004BDFBB /* ViewController.swift */; };
 		73C59EDB229D54C3004BDFBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73C59ED9229D54C3004BDFBB /* Main.storyboard */; };
@@ -41,6 +46,11 @@
 		3BDA82EE2196EB4D5E28F55B /* Pods-Golden.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Golden.debug.xcconfig"; path = "Target Support Files/Pods-Golden/Pods-Golden.debug.xcconfig"; sourceTree = "<group>"; };
 		4B3AF18156A8BB6145BB8C6F /* Pods_GoldenTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoldenTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AEF1CBB5FBE08145DEBAB0F /* Pods-GoldenUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenUITests.debug.xcconfig"; path = "Target Support Files/Pods-GoldenUITests/Pods-GoldenUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		73AFCA2A229E38D500F1BE73 /* object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = object.swift; sourceTree = "<group>"; };
+		73AFCA2F229E3A8100F1BE73 /* collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collection.swift; sourceTree = "<group>"; };
+		73AFCA31229E3ABE00F1BE73 /* collectionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collectionDetail.swift; sourceTree = "<group>"; };
+		73AFCA35229E3AF800F1BE73 /* addCollecton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addCollecton.swift; sourceTree = "<group>"; };
+		73AFCA37229E3C5E00F1BE73 /* myGolden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myGolden.swift; sourceTree = "<group>"; };
 		73C59ED2229D54C3004BDFBB /* Golden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Golden.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C59ED5229D54C3004BDFBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73C59ED7229D54C3004BDFBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,8 +109,36 @@
 				6AEF1CBB5FBE08145DEBAB0F /* Pods-GoldenUITests.debug.xcconfig */,
 				BF24B4A1E9FAD97FD434AB56 /* Pods-GoldenUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		73AFCA2C229E39A300F1BE73 /* みんなのゴールデン */ = {
+			isa = PBXGroup;
+			children = (
+				73AFCA2F229E3A8100F1BE73 /* collection.swift */,
+				73AFCA31229E3ABE00F1BE73 /* collectionDetail.swift */,
+				73AFCA35229E3AF800F1BE73 /* addCollecton.swift */,
+			);
+			name = "みんなのゴールデン";
+			path = "みんなのゴールデン";
+			sourceTree = "<group>";
+		};
+		73AFCA2D229E39B400F1BE73 /* 私のゴールデン */ = {
+			isa = PBXGroup;
+			children = (
+				73AFCA37229E3C5E00F1BE73 /* myGolden.swift */,
+			);
+			name = "私のゴールデン";
+			path = "私のゴールデン";
+			sourceTree = "<group>";
+		};
+		73AFCA2E229E39C800F1BE73 /* データベース */ = {
+			isa = PBXGroup;
+			children = (
+				73AFCA2A229E38D500F1BE73 /* object.swift */,
+			);
+			name = "データベース";
+			path = "データベース";
 			sourceTree = "<group>";
 		};
 		73C59EC9229D54C2004BDFBB = {
@@ -128,6 +166,9 @@
 		73C59ED4229D54C3004BDFBB /* Golden */ = {
 			isa = PBXGroup;
 			children = (
+				73AFCA2C229E39A300F1BE73 /* みんなのゴールデン */,
+				73AFCA2D229E39B400F1BE73 /* 私のゴールデン */,
+				73AFCA2E229E39C800F1BE73 /* データベース */,
 				73C59ED5229D54C3004BDFBB /* AppDelegate.swift */,
 				73C59ED7229D54C3004BDFBB /* ViewController.swift */,
 				73C59ED9229D54C3004BDFBB /* Main.storyboard */,
@@ -395,7 +436,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				73C59ED8229D54C3004BDFBB /* ViewController.swift in Sources */,
+				73AFCA36229E3AF800F1BE73 /* addCollecton.swift in Sources */,
 				73C59ED6229D54C3004BDFBB /* AppDelegate.swift in Sources */,
+				73AFCA32229E3ABF00F1BE73 /* collectionDetail.swift in Sources */,
+				73AFCA2B229E38D500F1BE73 /* object.swift in Sources */,
+				73AFCA38229E3C5E00F1BE73 /* myGolden.swift in Sources */,
+				73AFCA30229E3A8100F1BE73 /* collection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
