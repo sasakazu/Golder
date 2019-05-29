@@ -112,7 +112,7 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		73AFCA2C229E39A300F1BE73 /* みんなのゴールデン */ = {
+		73AFCA2C229E39A300F1BE73 /* みんなのゴールデン */ = {
 			isa = PBXGroup;
 			children = (
 				73AFCA2F229E3A8100F1BE73 /* collection.swift */,
@@ -123,7 +123,7 @@
 			path = "みんなのゴールデン";
 			sourceTree = "<group>";
 		};
-		73AFCA2D229E39B400F1BE73 /* 私のゴールデン */ = {
+		73AFCA2D229E39B400F1BE73 /* 私のゴールデン */ = {
 			isa = PBXGroup;
 			children = (
 				73AFCA37229E3C5E00F1BE73 /* myGolden.swift */,
@@ -132,7 +132,7 @@
 			path = "私のゴールデン";
 			sourceTree = "<group>";
 		};
-		73AFCA2E229E39C800F1BE73 /* データベース */ = {
+		73AFCA2E229E39C800F1BE73 /* データベース */ = {
 			isa = PBXGroup;
 			children = (
 				73AFCA2A229E38D500F1BE73 /* object.swift */,
@@ -166,9 +166,9 @@
 		73C59ED4229D54C3004BDFBB /* Golden */ = {
 			isa = PBXGroup;
 			children = (
-				73AFCA2C229E39A300F1BE73 /* みんなのゴールデン */,
-				73AFCA2D229E39B400F1BE73 /* 私のゴールデン */,
-				73AFCA2E229E39C800F1BE73 /* データベース */,
+				73AFCA2C229E39A300F1BE73 /* みんなのゴールデン */,
+				73AFCA2D229E39B400F1BE73 /* 私のゴールデン */,
+				73AFCA2E229E39C800F1BE73 /* データベース */,
 				73C59ED5229D54C3004BDFBB /* AppDelegate.swift */,
 				73C59ED7229D54C3004BDFBB /* ViewController.swift */,
 				73C59ED9229D54C3004BDFBB /* Main.storyboard */,
@@ -347,15 +347,19 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Golden/Pods-Golden-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

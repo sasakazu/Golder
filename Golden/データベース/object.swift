@@ -14,7 +14,7 @@ class Dog: Object {
 
     @objc dynamic var name = ""
     @objc dynamic var age = ""
-//    @objc dynamic var name = ""
-//    @objc dynamic var name = ""
+    @objc dynamic var image: UIImage? = nil
+    @objc dynamic var hitokoto = ""
 
 }

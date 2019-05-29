@@ -8,6 +8,7 @@ target 'Golden' do
   # Pods for Golden
   
   pod 'RealmSwift'
+  pod 'Firebase'
 
   target 'GoldenTests' do
     inherit! :search_paths
