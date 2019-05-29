@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Collection-->
+        <!--みんなのゴールデン-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="collection" customModule="Golden" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,10 +60,10 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="sIA-AX-NTU">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3Bu-jC-sfS">
+                    <navigationItem key="navigationItem" title="みんなのゴールデン" id="vqv-gB-nkQ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="vwX-Mt-gOw">
                             <connections>
-                                <segue destination="pVq-aG-HV7" kind="show" id="vgd-Zc-wD6"/>
+                                <segue destination="pVq-aG-HV7" kind="show" id="hfQ-77-CcR"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -100,7 +100,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="ひとこと" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Cjl-gI-IW0">
-                                <rect key="frame" x="20" y="401" width="374" height="128"/>
+                                <rect key="frame" x="20" y="401" width="374" height="192"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -144,6 +144,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="u63-eL-LdO" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QDT-DS-fAC">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -156,7 +157,7 @@
             </objects>
             <point key="canvasLocation" x="-57.971014492753625" y="116.51785714285714"/>
         </scene>
-        <!--My Golden-->
+        <!--私のゴールデン-->
         <scene sceneID="3FP-ND-OAr">
             <objects>
                 <viewController id="JbG-bl-niQ" customClass="myGolden" customModule="Golden" customModuleProvider="target" sceneMemberID="viewController">
@@ -217,7 +218,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zM9-33-Tyc"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ziE-Eb-0St"/>
+                    <navigationItem key="navigationItem" title="私のゴールデン" id="ziE-Eb-0St"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zvM-hS-fTL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -227,7 +228,7 @@
         <scene sceneID="Bc7-Bi-LQw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fJF-Ip-E7s" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="みんなのゴールデン" id="arg-SZ-KiF"/>
+                    <tabBarItem key="tabBarItem" title="みんなのゴールデン" image="people2" id="arg-SZ-KiF"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JSf-Kw-qJR">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -246,7 +247,7 @@
         <scene sceneID="aNR-pk-lcg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6LA-pZ-Piz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="私のゴールデン" id="Zfs-c4-O8K"/>
+                    <tabBarItem key="tabBarItem" title="私のゴールデン" image="golden" id="Zfs-c4-O8K"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kAB-Um-biz">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -262,4 +263,8 @@
             <point key="canvasLocation" x="744.92753623188412" y="544.41964285714278"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="golden" width="32" height="32"/>
+        <image name="people2" width="32" height="32"/>
+    </resources>
 </document>
