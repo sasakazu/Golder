@@ -13,6 +13,7 @@
 		73AFCA32229E3ABF00F1BE73 /* collectionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AFCA31229E3ABE00F1BE73 /* collectionDetail.swift */; };
 		73AFCA36229E3AF800F1BE73 /* addCollecton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AFCA35229E3AF800F1BE73 /* addCollecton.swift */; };
 		73AFCA38229E3C5E00F1BE73 /* myGolden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AFCA37229E3C5E00F1BE73 /* myGolden.swift */; };
+		73AFCA3A229F8F8E00F1BE73 /* cop.png in Resources */ = {isa = PBXBuildFile; fileRef = 73AFCA39229F8F8E00F1BE73 /* cop.png */; };
 		73C59ED6229D54C3004BDFBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C59ED5229D54C3004BDFBB /* AppDelegate.swift */; };
 		73C59ED8229D54C3004BDFBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C59ED7229D54C3004BDFBB /* ViewController.swift */; };
 		73C59EDB229D54C3004BDFBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73C59ED9229D54C3004BDFBB /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 		73AFCA31229E3ABE00F1BE73 /* collectionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collectionDetail.swift; sourceTree = "<group>"; };
 		73AFCA35229E3AF800F1BE73 /* addCollecton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addCollecton.swift; sourceTree = "<group>"; };
 		73AFCA37229E3C5E00F1BE73 /* myGolden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myGolden.swift; sourceTree = "<group>"; };
+		73AFCA39229F8F8E00F1BE73 /* cop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cop.png; sourceTree = "<group>"; };
 		73C59ED2229D54C3004BDFBB /* Golden.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Golden.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C59ED5229D54C3004BDFBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73C59ED7229D54C3004BDFBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,7 +114,7 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		73AFCA2C229E39A300F1BE73 /* みんなのゴールデン */ = {
+		73AFCA2C229E39A300F1BE73 /* みんなのゴールデン */ = {
 			isa = PBXGroup;
 			children = (
 				73AFCA2F229E3A8100F1BE73 /* collection.swift */,
@@ -123,7 +125,7 @@
 			path = "みんなのゴールデン";
 			sourceTree = "<group>";
 		};
-		73AFCA2D229E39B400F1BE73 /* 私のゴールデン */ = {
+		73AFCA2D229E39B400F1BE73 /* 私のゴールデン */ = {
 			isa = PBXGroup;
 			children = (
 				73AFCA37229E3C5E00F1BE73 /* myGolden.swift */,
@@ -132,7 +134,7 @@
 			path = "私のゴールデン";
 			sourceTree = "<group>";
 		};
-		73AFCA2E229E39C800F1BE73 /* データベース */ = {
+		73AFCA2E229E39C800F1BE73 /* データベース */ = {
 			isa = PBXGroup;
 			children = (
 				73AFCA2A229E38D500F1BE73 /* object.swift */,
@@ -166,11 +168,12 @@
 		73C59ED4229D54C3004BDFBB /* Golden */ = {
 			isa = PBXGroup;
 			children = (
-				73AFCA2C229E39A300F1BE73 /* みんなのゴールデン */,
-				73AFCA2D229E39B400F1BE73 /* 私のゴールデン */,
-				73AFCA2E229E39C800F1BE73 /* データベース */,
+				73AFCA2C229E39A300F1BE73 /* みんなのゴールデン */,
+				73AFCA2D229E39B400F1BE73 /* 私のゴールデン */,
+				73AFCA2E229E39C800F1BE73 /* データベース */,
 				73C59ED5229D54C3004BDFBB /* AppDelegate.swift */,
 				73C59ED7229D54C3004BDFBB /* ViewController.swift */,
+				73AFCA39229F8F8E00F1BE73 /* cop.png */,
 				73C59ED9229D54C3004BDFBB /* Main.storyboard */,
 				73C59EDC229D54D1004BDFBB /* Assets.xcassets */,
 				73C59EDE229D54D1004BDFBB /* LaunchScreen.storyboard */,
@@ -315,6 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73AFCA3A229F8F8E00F1BE73 /* cop.png in Resources */,
 				73C59EE0229D54D1004BDFBB /* LaunchScreen.storyboard in Resources */,
 				73C59EDD229D54D1004BDFBB /* Assets.xcassets in Resources */,
 				73C59EDB229D54C3004BDFBB /* Main.storyboard in Resources */,
