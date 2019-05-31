@@ -69,6 +69,8 @@ class addCollecton: UIViewController, UIImagePickerControllerDelegate, UINavigat
             
         }
         
+        
+        
     }
     
   
@@ -122,8 +124,8 @@ class addCollecton: UIViewController, UIImagePickerControllerDelegate, UINavigat
             
             myImage = imageView.image
             
+            dog.name = "YU"
             dog.image = myImage
-            
             dog.hitokoto = textView.text!
             
             try! realm.write {
@@ -136,6 +138,10 @@ class addCollecton: UIViewController, UIImagePickerControllerDelegate, UINavigat
         } catch {
             print("error")
         }
+     
+        
+    self.navigationController?.popToRootViewController(animated: true)
+        
         
     }
    

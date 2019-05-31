@@ -9,32 +9,77 @@
 import UIKit
 import RealmSwift
 
-class collection: UIViewController {
+class collection: UIViewController ,UICollectionViewDataSource,
+UICollectionViewDelegate {
+ 
     
+    let photos = ["nagi", "toko","saya","yumiko","yuyu","yuka","miki","mai","kurumi","katakuriko"]
     
+    var users: Results<Dog>!
     
     var myImage:UIImage? = nil
+    var testname:String = ""
     
-    @IBOutlet weak var image: UIImageView!
     
-
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//  イメージを表示する
-//        let realm = try! Realm()
-//
-//        let users = realm.objects(Dog.self).last
-//
-//        myImage = users?.image
-//
-//        image.image = myImage
         
-        
-        print(Realm.Configuration.defaultConfiguration.fileURL!)
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
+         print(Realm.Configuration.defaultConfiguration.fileURL!)
 
     }
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        collectionView.reloadData()
+
+    }
+    
+    
+ 
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        
+        let realm = try! Realm()
+        
+        let users = realm.objects(Dog.self)
+
+        return users.count
+        
+        
+    }
+    
+    
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
+        
+        
+        let realm = try! Realm()
+
+        let users = realm.objects(Dog.self)
+
+        let object = users[indexPath.row]
+
+        cell.label.text = object.name
+        
+        cell.imageView.image = object.image
+        
+        
+        
+        return cell
+        
+        
+        
+    }
 
  
 
