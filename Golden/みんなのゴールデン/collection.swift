@@ -29,6 +29,8 @@ UICollectionViewDelegate {
         
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
+     
+        
          print(Realm.Configuration.defaultConfiguration.fileURL!)
 
     }
@@ -69,9 +71,12 @@ UICollectionViewDelegate {
 
         let object = users[indexPath.row]
 
-        cell.label.text = object.name
+        cell.textView.text = object.hitokoto
         
         cell.imageView.image = object.image
+        
+        cell.imageView.layer.cornerRadius = 8
+        
         
         
         
