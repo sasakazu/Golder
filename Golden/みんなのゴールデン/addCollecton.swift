@@ -131,10 +131,10 @@ class addCollecton: UIViewController, UIImagePickerControllerDelegate, UINavigat
             let dog = Dog()
             
 //            iphone用
-//            myImage = imageView.image
+            myImage = imageView.image
             
 //            シュミレーター用
-            myImage = UIImage(named: "jk")
+//            myImage = UIImage(named: "test2")
             
             dog.name = "YU"
             dog.image = myImage

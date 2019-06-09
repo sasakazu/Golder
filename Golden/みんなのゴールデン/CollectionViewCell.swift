@@ -12,10 +12,11 @@ class CollectionViewCell: UICollectionViewCell {
     
     
     @IBOutlet weak var imageView: UIImageView!
-   
     @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var partnerIcon: UIImageView!
+    @IBOutlet weak var partnerName: UILabel!
     
-
+    
     
     
     

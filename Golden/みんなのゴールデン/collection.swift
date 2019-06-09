@@ -80,6 +80,21 @@ UICollectionViewDelegate {
         
         
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let realm = try! Realm()
+        
+        
+        let users = realm.objects(Dog.self).sorted(byKeyPath: "id", ascending: false)
+        
+        let object = users[indexPath.row]
+        
+        print("id:\(object.id)")
+        
+        
+        
+    }
 
  
 
