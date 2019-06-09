@@ -42,8 +42,19 @@ class Dog: Object {
     }
     
     @objc dynamic private var imageData: NSData? = nil
+   
     override static func ignoredProperties() -> [String] {
         return ["image", "_image"]
     }
     
+}
+
+
+
+class Partner: Object {
+    
+    @objc dynamic var id = 0
+    @objc dynamic var name = ""
+
+
 }

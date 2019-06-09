@@ -12,15 +12,12 @@ import RealmSwift
 class collection: UIViewController ,UICollectionViewDataSource,
 UICollectionViewDelegate {
  
-    
-    let photos = ["nagi", "toko","saya","yumiko","yuyu","yuka","miki","mai","kurumi","katakuriko"]
-    
     var users: Results<Dog>!
     
+
     var myImage:UIImage? = nil
     var testname:String = ""
-    
-    
+   
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -74,11 +71,8 @@ UICollectionViewDelegate {
         cell.textView.text = object.hitokoto
         
         cell.imageView.image = object.image
-        
-        cell.imageView.layer.cornerRadius = 8
-        
-        
-        
+    
+      
         
         return cell
         

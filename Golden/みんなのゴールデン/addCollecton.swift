@@ -8,7 +8,7 @@
 import UIKit
 import RealmSwift
 
-class addCollecton: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class addCollecton: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate,UITextViewDelegate {
     
     
     var myImage:UIImage? = nil
@@ -21,10 +21,18 @@ class addCollecton: UIViewController, UIImagePickerControllerDelegate, UINavigat
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if imageView.image == nil {
+            let image1 = UIImage(named: "no_image")
+            imageView.image = image1
+        }
         
+        self.textView.layer.cornerRadius = 4
         self.imageView.layer.cornerRadius = 8
         self.button.layer.cornerRadius = 7
 
+        self.textView.delegate = self
+        
+        
     }
     
     @IBAction func camera(_ sender: Any) {
@@ -146,6 +154,16 @@ class addCollecton: UIViewController, UIImagePickerControllerDelegate, UINavigat
     }
    
     
-    
+//    returnキーで閉じる
+  
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        
+        if (text == "\n") {
+           
+            textView.resignFirstResponder()
+            return false
+        }
+        return true
+    }
     
 }
