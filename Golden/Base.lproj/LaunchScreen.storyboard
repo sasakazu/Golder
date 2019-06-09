@@ -28,7 +28,7 @@
                                 <color key="textColor" red="1" green="0.80528671151133535" blue="0.40754427553879324" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ゴールデンレトリバー専用アプリ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sca-Zc-pWY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ゴールデンレトリーバー専用SNS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sca-Zc-pWY">
                                 <rect key="frame" x="103" y="365" width="185" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="1yW-ux-fGe"/>

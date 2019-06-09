@@ -55,6 +55,9 @@ class Partner: Object {
     
     @objc dynamic var id = 0
     @objc dynamic var name = ""
+    
+    let dogs = List<Dog>()
+    
 
 
 }
