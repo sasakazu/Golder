@@ -130,16 +130,23 @@ class addCollecton: UIViewController, UIImagePickerControllerDelegate, UINavigat
             
             let dog = Dog()
             
-            myImage = imageView.image
+//            iphone用
+//            myImage = imageView.image
+            
+//            シュミレーター用
+            myImage = UIImage(named: "jk")
             
             dog.name = "YU"
             dog.image = myImage
             dog.hitokoto = textView.text!
             
+            dog.save()
+            
             try! realm.write {
                 realm.add(dog)
                 print("success", dog)
                 
+               
                 
             }
             
