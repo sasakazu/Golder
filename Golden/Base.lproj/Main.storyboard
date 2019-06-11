@@ -106,24 +106,31 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="364"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uU-Jv-SDV">
-                                <rect key="frame" x="308" y="680" width="86" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.34103861429999999" green="0.6467503926" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Twitter">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wkx-YF-fcd">
-                                <rect key="frame" x="20" y="436" width="339" height="156"/>
+                                <rect key="frame" x="20" y="436" width="339" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uU-Jv-SDV">
+                                <rect key="frame" x="246" y="577" width="113" height="29"/>
+                                <color key="backgroundColor" red="0.34103861429999999" green="0.6467503926" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="GN9-TH-BtP"/>
+                                    <constraint firstAttribute="height" constant="29" id="uT5-CE-Qf4"/>
+                                </constraints>
+                                <state key="normal" title="Twitter">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Aai-FX-2F6" firstAttribute="trailing" secondItem="6uU-Jv-SDV" secondAttribute="trailing" constant="16" id="E8K-SS-yr7"/>
+                            <constraint firstItem="Aai-FX-2F6" firstAttribute="bottom" secondItem="6uU-Jv-SDV" secondAttribute="bottom" constant="12" id="Xyq-XH-Dif"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Aai-FX-2F6"/>
                     </view>
                     <connections>
@@ -235,11 +242,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <state key="normal" title="save"/>
+                                <connections>
+                                    <action selector="saveBtn:" destination="uO5-RW-s4r" eventType="touchUpInside" id="bJI-S0-rLU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="LXB-lc-J0w"/>
                     </view>
+                    <connections>
+                        <outlet property="addPartner" destination="9JO-pN-sYf" id="xBs-pi-5jQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Clk-Cf-JZK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

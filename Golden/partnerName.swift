@@ -7,16 +7,25 @@
 //
 
 import UIKit
+import RealmSwift
 
 class partnerName: UIViewController {
 
+    @IBOutlet weak var addPartner: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+ 
+    
     }
     
-
+    @IBAction func saveBtn(_ sender: Any) {
+        
+        
+    }
+    
  
 
 }
