@@ -21,6 +21,7 @@
 		73C59EE0229D54D1004BDFBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73C59EDE229D54D1004BDFBB /* LaunchScreen.storyboard */; };
 		73C59EEB229D54D1004BDFBB /* GoldenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C59EEA229D54D1004BDFBB /* GoldenTests.swift */; };
 		73C59EF6229D54D1004BDFBB /* GoldenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C59EF5229D54D1004BDFBB /* GoldenUITests.swift */; };
+		73F4E67C22AFAE1E0050F409 /* partnerName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F4E67B22AFAE1E0050F409 /* partnerName.swift */; };
 		7FC118C84ED52712F581DFF7 /* Pods_GoldenUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB338F81756109FCD3C694E6 /* Pods_GoldenUITests.framework */; };
 		DDF41B363BD9031F7AE6DC47 /* Pods_Golden.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB32FCC77A7F42388FC4AB23 /* Pods_Golden.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,7 @@
 		73C59EF1229D54D1004BDFBB /* GoldenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoldenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C59EF5229D54D1004BDFBB /* GoldenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldenUITests.swift; sourceTree = "<group>"; };
 		73C59EF7229D54D1004BDFBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73F4E67B22AFAE1E0050F409 /* partnerName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partnerName.swift; sourceTree = "<group>"; };
 		AEB049A5EE484B1A933A4259 /* Pods-GoldenTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenTests.debug.xcconfig"; path = "Target Support Files/Pods-GoldenTests/Pods-GoldenTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BF24B4A1E9FAD97FD434AB56 /* Pods-GoldenUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenUITests.release.xcconfig"; path = "Target Support Files/Pods-GoldenUITests/Pods-GoldenUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CB338F81756109FCD3C694E6 /* Pods_GoldenUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoldenUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +177,7 @@
 				73C59ED5229D54C3004BDFBB /* AppDelegate.swift */,
 				73C59ED7229D54C3004BDFBB /* ViewController.swift */,
 				73C59ED9229D54C3004BDFBB /* Main.storyboard */,
+				73F4E67B22AFAE1E0050F409 /* partnerName.swift */,
 				73C59EDC229D54D1004BDFBB /* Assets.xcassets */,
 				73C59EDE229D54D1004BDFBB /* LaunchScreen.storyboard */,
 				73C59EE1229D54D1004BDFBB /* Info.plist */,
@@ -443,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73C59ED8229D54C3004BDFBB /* ViewController.swift in Sources */,
+				73F4E67C22AFAE1E0050F409 /* partnerName.swift in Sources */,
 				73AFCA36229E3AF800F1BE73 /* addCollecton.swift in Sources */,
 				73BACECE229FDA3C00B20B41 /* CollectionViewCell.swift in Sources */,
 				73C59ED6229D54C3004BDFBB /* AppDelegate.swift in Sources */,

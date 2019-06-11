@@ -7,24 +7,34 @@
 //
 
 import UIKit
+import RealmSwift
 
 class collectionDetail: UIViewController {
-
+    
+    var reciveTextView:String = ""
+    var Id:Int = 0
+    
+    @IBOutlet weak var imageViewDetail: UIImageView!
+    @IBOutlet weak var textViewDetail: UITextView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        let realm = try! Realm()
+        
+        
+        let users = realm.objects(Dog.self).filter("id == %@", Id).first
 
-        // Do any additional setup after loading the view.
+        textViewDetail.text = users?.hitokoto
+        imageViewDetail.image = users?.image
+        
+        print(reciveTextView)
+        
+        
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

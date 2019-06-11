@@ -12,8 +12,10 @@ import RealmSwift
 class collection: UIViewController ,UICollectionViewDataSource,
 UICollectionViewDelegate {
  
-    var users: Results<Dog>!
+//    var users: Results<Dog>!
     
+    var textView:String = ""
+    var myId:Int = 0
 
     var myImage:UIImage? = nil
     var testname:String = ""
@@ -27,7 +29,6 @@ UICollectionViewDelegate {
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
      
-        
          print(Realm.Configuration.defaultConfiguration.fileURL!)
 
     }
@@ -90,12 +91,33 @@ UICollectionViewDelegate {
         
         let object = users[indexPath.row]
         
+//        textView = object.hitokoto
+        
+        myId = object.id
+        
         print("id:\(object.id)")
         
+         performSegue(withIdentifier: "goDetail",sender: nil)
         
         
     }
 
  
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
+        if (segue.identifier == "goDetail") {
+            
+            let secondVC: collectionDetail = (segue.destination as? collectionDetail)!
+            
+//            secondVC.reciveTextView = textView
+            secondVC.Id = myId
+            
+     
+            
+            
+        }
+        
+    }
 
 }
